@@ -1,0 +1,94 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main{
+            margin:0;
+            border: .1em solid green;
+            background-color: black;
+            color:white;
+        }
+        .navbar{
+            text-shadow: 2px 2px 5px red;
+        }
+        .aboutme{
+            border: .1em solid blue;
+            background:
+            linear-gradient(red, transparent),
+            linear-gradient(to top left, lime, transparent),
+            linear-gradient(to top right, blue, transparent);
+            background-blend-mode: weave;
+            border-radius: .5em;
+            margin:1%;
+
+        }
+        .mylinks{
+            border: .1em solid blue;
+            border: .1em solid blue;
+            background:
+            linear-gradient(red, transparent),
+            linear-gradient(to top left, lime, transparent),
+            linear-gradient(to top right, blue, transparent);
+            background-blend-mode: weave;
+            border-radius: .5em;
+            margin:1%;
+        }
+        .title{
+            font:bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar justify-content-center navbar-expand-sm navbar-light bg-dark">
+        <a href="#" class="navbar-brand">Njord Soevik</a>
+    </nav>
+    <div class="container-fluid main">
+        <div class="row aboutme">
+
+                <span class="about-title">About Me</span>
+                I am an avid programmer, currently pursuing my Masters in Computer Science at Northeastern to improve my software engineering skills.  
+               
+                    
+                    
+        </div>
+
+        <div class="row justify-content-center projects">
+            <div class="col-sm-2 projcol"> <!-- col-X , can add up to 12, less here to add outer margin -->
+                <a href="#" class="nav-link">Automation</a>
+            </div>
+            <div class="col-sm-2 projcol"> <!-- added sm in middle so anythign smaller than SM stacks-->
+                <a href="#" class="nav-link">Machine Learning</a>
+            </div>
+            <div class="col-sm-2 projcol">
+                <a href="#" class="nav-link">Forecasting</a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mylinks"> <!-- justify-content-center to center the cols -->
+            <div class="col-sm-2 navcol"> <!-- col-X , can add up to 12, less here to add outer margin -->
+                <a href="#" class="nav-link">GitHub</a>
+            </div>
+            <div class="col-sm-2 navcol"> <!-- added sm in middle so anythign smaller than SM stacks-->
+                <a href="#" class="nav-link">LinkedIn</a>
+            </div>
+            <div class="col-sm-2 navcol">
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            <div class="col-sm-2 navcol">
+                <a href="#" class="nav-link">Resume</a>
+            </div>
+        </div>
+
+        
+       
+
+
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>
