@@ -4,90 +4,111 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .main{
-            margin:0;
-            border: .1em solid green;
+            height:100%;
+            border: .1em solid black;
             background-color: black;
             color:white;
         }
-        .navbar{
-            text-shadow: 2px 2px 5px red;
-        }
-        .aboutme{
-            border: .1em solid blue;
-            background:
-            linear-gradient(red, transparent),
-            linear-gradient(to top left, lime, transparent),
-            linear-gradient(to top right, blue, transparent);
-            background-blend-mode: weave;
-            border-radius: .5em;
-            margin:1%;
 
-        }
-        .mylinks{
-            border: .1em solid blue;
-            border: .1em solid blue;
-            background:
-            linear-gradient(red, transparent),
-            linear-gradient(to top left, lime, transparent),
-            linear-gradient(to top right, blue, transparent);
-            background-blend-mode: weave;
-            border-radius: .5em;
-            margin:1%;
-        }
+
         .title{
             font:bold;
+        }
+        .status-label{
+            margin-left: 2%;
         }
 
     </style>
 </head>
 
 <body>
-    <nav class="navbar justify-content-center navbar-expand-sm navbar-light bg-dark">
-        <a href="#" class="navbar-brand">Njord Soevik</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Appseed</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Profile</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <div class="container-fluid main">
         <div class="row aboutme">
-
-                <span class="about-title">About Me</span>
-                I am an avid programmer, currently pursuing my Masters in Computer Science at Northeastern to improve my software engineering skills.  
-               
-                    
-                    
+                <div id="about-title">My Applications</span>
+                <div id="about-title">0/22 Completed</span>
         </div>
 
-        <div class="row justify-content-center projects">
-            <div class="col-sm-2 projcol"> <!-- col-X , can add up to 12, less here to add outer margin -->
-                <a href="#" class="nav-link">Automation</a>
-            </div>
-            <div class="col-sm-2 projcol"> <!-- added sm in middle so anythign smaller than SM stacks-->
-                <a href="#" class="nav-link">Machine Learning</a>
-            </div>
-            <div class="col-sm-2 projcol">
-                <a href="#" class="nav-link">Forecasting</a>
-            </div>
+        <div class="row status-label">
+            In Progress
         </div>
-
-        <div class="row justify-content-center mylinks"> <!-- justify-content-center to center the cols -->
-            <div class="col-sm-2 navcol"> <!-- col-X , can add up to 12, less here to add outer margin -->
-                <a href="#" class="nav-link">GitHub</a>
+        <div class="row justify-content-center inprogress-schools">
+            <div class="col-sm-2 col-xs-1 projcol"> <!-- col-X , can add up to 12, less here to add outer margin -->
+                <a href="#" class="nav-link">School 1</a>
             </div>
-            <div class="col-sm-2 navcol"> <!-- added sm in middle so anythign smaller than SM stacks-->
-                <a href="#" class="nav-link">LinkedIn</a>
+            <div class="col-sm-2 col-xs-1 projcol"> <!-- added sm in middle so anythign smaller than SM stacks-->
+                <a href="#" class="nav-link">School 2</a>
             </div>
-            <div class="col-sm-2 navcol">
-                <a href="#" class="nav-link">Contact</a>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 3</a>
             </div>
-            <div class="col-sm-2 navcol">
-                <a href="#" class="nav-link">Resume</a>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 4</a>
             </div>
         </div>
 
-        
-       
-
+        <div class="row status-label">
+            Completed
+        </div>
+        <div class="row justify-content-center completed-schools"> 
+            <div class="col-sm-2 col-xs-1 projcol"> 
+                <a href="#" class="nav-link">School 1</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol"> 
+                <a href="#" class="nav-link">School 2</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 3</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 4</a>
+            </div>
+        </div>
+        <div class="row status-label">
+            Add more
+        </div>
+        <div class="row justify-content-center add-schools"> 
+            <div class="col-sm-2 col-xs-1 projcol"> 
+                <a href="#" class="nav-link">School 1</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol"> 
+                <a href="#" class="nav-link">School 2</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 3</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 4</a>
+            </div>
+        </div>
 
     </div>
-   
+    <script>
+        console.log('hello');
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
