@@ -1,0 +1,122 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main{
+            height:100%;
+            border: .1em solid black;
+            background-color: black;
+            color:white;
+        }
+
+
+        .title{
+            font:bold;
+        }
+        .status-label{
+            margin-left: 2%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Appseed</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid main">
+        <div class="row aboutme">
+                <div id="about-title">My Applications</span>
+                <div id="about-title">0/22 Completed</span>
+        </div>
+
+        <div class="row status-label">
+            In Progress
+        </div>
+        <div class="row justify-content-center inprogress-schools">
+            <div class="col-sm-2 col-xs-1 projcol"> <!-- col-X , can add up to 12, less here to add outer margin -->
+                <a href="#" class="nav-link">School 1</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol"> <!-- added sm in middle so anythign smaller than SM stacks-->
+                <a href="#" class="nav-link">School 2</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 3</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 4</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol"> <!-- col-X , can add up to 12, less here to add outer margin -->
+                <a href="#" class="nav-link">School 1</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol"> <!-- added sm in middle so anythign smaller than SM stacks-->
+                <a href="#" class="nav-link">School 2</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 3</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 4</a>
+            </div>
+        </div>
+
+        <div class="row status-label">
+            Completed
+        </div>
+        <div class="row justify-content-center completed-schools"> 
+            <div class="col-sm-2 col-xs-1 projcol"> 
+                <a href="#" class="nav-link">School 1</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol"> 
+                <a href="#" class="nav-link">School 2</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 3</a>
+            </div>
+            <div class="col-sm-2 col-xs-1 projcol">
+                <a href="#" class="nav-link">School 4</a>
+            </div>
+        </div>
+        <div class="row status-label">
+            Add more
+        </div>
+        <div class="row justify-content-center add-schools"> 
+            
+        </div>
+
+    </div>
+    <script>
+        console.log('hello');
+        var count=[1,2,3,4];
+        var container=document.getElementsByClassName('add-schools');
+        for(var i=0;i<count.length;i++){
+            container[0].innerHTML+=('<div class="col-sm-2 col-xs-1 projcol">' + count[i] + '</div>');
+            console.log('hello');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>
